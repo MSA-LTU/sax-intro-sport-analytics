@@ -15,3 +15,5 @@ The public site should present:
 - a pathway link to the **Master of Sport Analytics**.
 
 The site is intentionally static for GitHub Pages. `docs/app.js` provides lightweight interaction for the learner-intent buttons and recommendation panel, while `docs/assets/` contains original visual assets for the hero and module cards.
+
+The header uses the official La Trobe University white logo asset sourced from `https://www.latrobe.edu.au/_media/la-trobe-api/v5/img/logo-white.svg`.

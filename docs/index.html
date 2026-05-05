@@ -12,11 +12,8 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand-lockup" href="./index.html" aria-label="La Trobe Uni Sport Analytics home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">
-          <strong>La Trobe Uni</strong>
-          <span>Sport Analytics</span>
-        </span>
+        <span class="logo-panel"><img src="./assets/la-trobe-logo-white.svg" alt="La Trobe University"></span>
+        <span class="program-label">Sport Analytics</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#path">Learning path</a>
@@ -29,7 +26,9 @@
   <main>
     <section class="hero-screen" aria-labelledby="hero-title">
       <div class="shell hero-inner">
-        <img class="hero-art" src="./assets/hero-sport-data-lab.png" alt="A playful sport analytics workspace with charts, data points, code labels, and a small field diagram.">
+        <div class="hero-visual" aria-hidden="true">
+          <img src="./assets/hero-sport-data-lab.png" alt="">
+        </div>
         <p class="hero-kicker">Learn sport analytics by doing</p>
         <h1 id="hero-title">La Trobe Uni Sport Analytics</h1>
         <p class="hero-copy">
@@ -53,11 +52,13 @@
           <a class="button secondary" href="./register.html">Register to start Module 1</a>
         </div>
       </div>
-      <div class="topic-rail" aria-label="Course themes">
-        <span><span class="rail-dot rail-blue"></span>Python basics</span>
-        <span><span class="rail-dot rail-red"></span>Sport data</span>
-        <span><span class="rail-dot rail-green"></span>Visualisation</span>
-        <span><span class="rail-dot rail-yellow"></span>Research cases</span>
+      <div class="topic-rail-wrap">
+        <div class="topic-rail shell" aria-label="Course themes">
+          <span><span class="rail-dot rail-blue"></span>Python basics</span>
+          <span><span class="rail-dot rail-red"></span>Sport data</span>
+          <span><span class="rail-dot rail-green"></span>Visualisation</span>
+          <span><span class="rail-dot rail-yellow"></span>Research cases</span>
+        </div>
       </div>
     </section>
 
@@ -84,35 +85,43 @@
         <div class="path-grid" aria-label="La Trobe Uni Sport Analytics learning path">
           <article class="path-card is-selected" data-path-card>
             <span class="pick-badge">Start here</span>
-            <img src="./assets/icon-dataset.png" alt="" aria-hidden="true">
-            <p class="path-meta">Module 1</p>
-            <h3>SAX101-01</h3>
-            <p>Working With Your First Sports Dataset</p>
+            <div class="path-card-media blue-band"><img src="./assets/icon-dataset.png" alt="" aria-hidden="true"></div>
+            <div class="path-card-body">
+              <p class="path-meta">Module 1</p>
+              <h3>SAX101-01</h3>
+              <p>Working With Your First Sports Dataset</p>
+            </div>
           </article>
 
           <article class="path-card">
             <span class="pick-badge muted">Next</span>
-            <img src="./assets/icon-visualisation.png" alt="" aria-hidden="true">
-            <p class="path-meta">Module 2</p>
-            <h3>SAX101-02</h3>
-            <p>Summarising and Visualising Sports Data</p>
+            <div class="path-card-media orange-band"><img src="./assets/icon-visualisation.png" alt="" aria-hidden="true"></div>
+            <div class="path-card-body">
+              <p class="path-meta">Module 2</p>
+              <h3>SAX101-02</h3>
+              <p>Summarising and Visualising Sports Data</p>
+            </div>
           </article>
 
           <article class="path-card">
             <span class="pick-badge muted">Coming soon</span>
-            <img src="./assets/icon-case-study.png" alt="" aria-hidden="true">
-            <p class="path-meta">SAX201</p>
-            <h3>Paper Case Studies</h3>
-            <p>Replicate one bounded output from a sport analytics research article.</p>
+            <div class="path-card-media yellow-band"><img src="./assets/icon-case-study.png" alt="" aria-hidden="true"></div>
+            <div class="path-card-body">
+              <p class="path-meta">SAX201</p>
+              <h3>Paper Case Studies</h3>
+              <p>Replicate one bounded output from a sport analytics research article.</p>
+            </div>
           </article>
 
           <article class="path-card pathway-card">
             <span class="pick-badge muted">Go deeper</span>
-            <img src="./assets/icon-pathway.png" alt="" aria-hidden="true">
-            <p class="path-meta">Study pathway</p>
-            <h3>Master of Sport Analytics</h3>
-            <p>Explore the formal La Trobe pathway when you are ready for deeper training.</p>
-            <a class="path-link" href="https://www.latrobe.edu.au/courses/master-of-sport-analytics">Explore the MSA</a>
+            <div class="path-card-media green-band"><img src="./assets/icon-pathway.png" alt="" aria-hidden="true"></div>
+            <div class="path-card-body">
+              <p class="path-meta">Study pathway</p>
+              <h3>Master of Sport Analytics</h3>
+              <p>Explore the formal La Trobe pathway when you are ready for deeper training.</p>
+              <a class="path-link" href="https://www.latrobe.edu.au/courses/master-of-sport-analytics">Explore the MSA</a>
+            </div>
           </article>
         </div>
 

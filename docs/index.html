@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>La Trobe Uni Sport Analytics</title>
-  <meta name="description" content="A beginner-friendly public resource for learning sport analytics with Python through La Trobe Uni Sport Analytics.">
+  <meta name="description" content="A guided, beginner-friendly public resource for learning sport analytics with Python through La Trobe Uni Sport Analytics.">
   <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
 </head>
-<body>
+<body data-page="home">
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand-lockup" href="./index.html">
+    <div class="shell header-inner">
+      <a class="brand-lockup" href="./index.html" aria-label="La Trobe Uni Sport Analytics home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">
           <strong>La Trobe Uni</strong>
@@ -18,117 +19,106 @@
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="./index.html">Home</a>
+        <a href="#path">Learning path</a>
         <a href="./quick-start.html">Quick start</a>
-        <a href="./register.html">Register</a>
+        <a class="nav-cta" href="./register.html">Register</a>
       </nav>
-    </div>
-  </header>
-  <header class="site-hero">
-    <div class="wrap">
-      <p class="hero-kicker">La Trobe Uni Sport Analytics</p>
-      <h1 class="hero-display">
-        <span>Start with</span>
-        <span>data.</span>
-        <span>Build sport</span>
-        <span>analytics</span>
-        <span>confidence.</span>
-      </h1>
-      <p class="lead">
-        This free resource is designed for coaches, analysts, practitioners, and curious beginners who want
-        a welcoming entry point into working with sports data in Python.
-      </p>
-      <div class="hero-actions">
-        <a class="button primary" href="./register.html">Register for the course</a>
-        <a class="button secondary" href="./quick-start.html">See the quick start</a>
-      </div>
     </div>
   </header>
 
   <main>
-    <section class="section">
-      <div class="wrap two-column">
-        <div>
-          <p class="section-label">What this resource is for</p>
-          <h2>
-            <span>Start with</span>
-            <span>data concepts,</span>
-            <span>not jargon.</span>
-          </h2>
-          <p>
-            The first two modules focus on core ideas such as rows, columns, files, summaries, grouping,
-            and visualisation. The examples come from sport, but the lessons are written for a broad audience.
-          </p>
-        </div>
-        <div class="card-stack">
-          <article class="card">
-            <h3>Module 1</h3>
-            <p><strong>SAX101-01</strong><br>Working With Your First Sports Dataset</p>
-          </article>
-          <article class="card">
-            <h3>Module 2</h3>
-            <p><strong>SAX101-02</strong><br>Summarising and Visualising Sports Data</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <section class="hero-screen" aria-labelledby="hero-title">
+      <div class="shell hero-inner">
+        <img class="hero-art" src="./assets/hero-sport-data-lab.png" alt="A playful sport analytics workspace with charts, data points, code labels, and a small field diagram.">
+        <p class="hero-kicker">Learn sport analytics by doing</p>
+        <h1 id="hero-title">La Trobe Uni Sport Analytics</h1>
+        <p class="hero-copy">
+          A guided public resource for learning Python, data concepts, and sport analytics through small practical wins.
+        </p>
 
-    <section class="section accent">
-      <div class="wrap">
-        <p class="section-label">What you will do</p>
-        <h2>
-          <span>Build confidence</span>
-          <span>with small,</span>
-          <span>useful wins.</span>
-        </h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Open and inspect a dataset</h3>
-            <p>Understand how sports data is stored and how to begin working with it in Python.</p>
-          </article>
-          <article class="card">
-            <h3>Create a simple derived variable</h3>
-            <p>Practice turning raw fields into a more useful metric for decision-making.</p>
-          </article>
-          <article class="card">
-            <h3>Summarise and compare</h3>
-            <p>Group observations into tables that a coach, analyst, or practitioner could actually use.</p>
-          </article>
-          <article class="card">
-            <h3>Save a chart and interpret it</h3>
-            <p>Produce a basic visual and explain what it does and does not tell you.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap split-panel">
-        <div>
-          <p class="section-label">Start here</p>
-          <h2>
-            <span>Begin with</span>
-            <span>the quick start.</span>
-          </h2>
-          <p>
-            If you are new to GitHub Classroom or Python, the quick-start page will walk you through accepting
-            an assignment, opening the files, and running the tests.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="./quick-start.html">Open quick start</a>
-            <a class="button secondary" href="./register.html">Go to registration</a>
+        <div class="intent-panel" aria-label="Choose your learning goal">
+          <p class="panel-label">Tell us where you are starting</p>
+          <div class="intent-options" role="group" aria-label="Learner intent">
+            <button class="intent-button is-active" type="button" data-intent="coding" aria-pressed="true">I am new to coding</button>
+            <button class="intent-button" type="button" data-intent="sport" aria-pressed="false">I work in sport</button>
+            <button class="intent-button" type="button" data-intent="study" aria-pressed="false">I am exploring study</button>
           </div>
+          <noscript>
+            <p class="microcopy">Start with SAX101-01, then continue to SAX101-02. Registration opens the first module.</p>
+          </noscript>
         </div>
-        <aside class="callout">
-          <h3>Next-step pathway</h3>
-          <p>
-            If this resource helps you discover that you want deeper analytical training, the next formal pathway is the
-            <a href="https://www.latrobe.edu.au/courses/master-of-sport-analytics">La Trobe Master of Sport Analytics</a>.
+
+        <div class="hero-actions">
+          <a class="button primary" href="#path">See my path</a>
+          <a class="button secondary" href="./register.html">Register to start Module 1</a>
+        </div>
+      </div>
+      <div class="topic-rail" aria-label="Course themes">
+        <span><span class="rail-dot rail-blue"></span>Python basics</span>
+        <span><span class="rail-dot rail-red"></span>Sport data</span>
+        <span><span class="rail-dot rail-green"></span>Visualisation</span>
+        <span><span class="rail-dot rail-yellow"></span>Research cases</span>
+      </div>
+    </section>
+
+    <section class="recommendation-section" aria-labelledby="recommendation-title">
+      <div class="shell recommendation-layout">
+        <div class="mascot-chip" aria-hidden="true">1</div>
+        <div>
+          <p class="section-label">Recommended start</p>
+          <h2 id="recommendation-title" data-recommendation-title>Start with SAX101-01.</h2>
+          <p data-recommendation-copy>
+            You will begin with rows, columns, files, and a small sports dataset before writing your first Python functions.
           </p>
-          <p class="microcopy">
-            The public-facing brand here is La Trobe Uni Sport Analytics. The MSA is the deeper academic pathway.
-          </p>
-        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="path-section" id="path" aria-labelledby="path-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-label">Your learning path</p>
+          <h2 id="path-title">Start here and build outward.</h2>
+        </div>
+
+        <div class="path-grid" aria-label="La Trobe Uni Sport Analytics learning path">
+          <article class="path-card is-selected" data-path-card>
+            <span class="pick-badge">Start here</span>
+            <img src="./assets/icon-dataset.png" alt="" aria-hidden="true">
+            <p class="path-meta">Module 1</p>
+            <h3>SAX101-01</h3>
+            <p>Working With Your First Sports Dataset</p>
+          </article>
+
+          <article class="path-card">
+            <span class="pick-badge muted">Next</span>
+            <img src="./assets/icon-visualisation.png" alt="" aria-hidden="true">
+            <p class="path-meta">Module 2</p>
+            <h3>SAX101-02</h3>
+            <p>Summarising and Visualising Sports Data</p>
+          </article>
+
+          <article class="path-card">
+            <span class="pick-badge muted">Coming soon</span>
+            <img src="./assets/icon-case-study.png" alt="" aria-hidden="true">
+            <p class="path-meta">SAX201</p>
+            <h3>Paper Case Studies</h3>
+            <p>Replicate one bounded output from a sport analytics research article.</p>
+          </article>
+
+          <article class="path-card pathway-card">
+            <span class="pick-badge muted">Go deeper</span>
+            <img src="./assets/icon-pathway.png" alt="" aria-hidden="true">
+            <p class="path-meta">Study pathway</p>
+            <h3>Master of Sport Analytics</h3>
+            <p>Explore the formal La Trobe pathway when you are ready for deeper training.</p>
+            <a class="path-link" href="https://www.latrobe.edu.au/courses/master-of-sport-analytics">Explore the MSA</a>
+          </article>
+        </div>
+
+        <div class="continue-dock">
+          <a class="button dock-button" href="./register.html">Register to start Module 1</a>
+        </div>
       </div>
     </section>
   </main>

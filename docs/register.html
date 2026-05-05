@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Register | La Trobe Uni Sport Analytics</title>
-  <meta name="description" content="Registration page for La Trobe Uni Sport Analytics.">
+  <meta name="description" content="Registration checkpoint for La Trobe Uni Sport Analytics.">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body data-page="register">
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand-lockup" href="./index.html">
+    <div class="shell header-inner">
+      <a class="brand-lockup" href="./index.html" aria-label="La Trobe Uni Sport Analytics home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">
           <strong>La Trobe Uni</strong>
@@ -18,45 +18,59 @@
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="./index.html">Home</a>
+        <a href="./index.html#path">Learning path</a>
         <a href="./quick-start.html">Quick start</a>
-        <a href="./register.html">Register</a>
+        <a class="nav-cta" href="./register.html" aria-current="page">Register</a>
       </nav>
     </div>
   </header>
-  <main class="page">
-    <div class="wrap narrow">
-      <div class="page-hero">
-        <p class="hero-kicker">La Trobe Uni Sport Analytics</p>
-        <h1 class="page-title">
-          <span>Register</span>
-          <span>for the</span>
-          <span>resource.</span>
-        </h1>
-      </div>
-      <p class="lead">
-        This page is where the Microsoft Forms signup link should sit for public launch.
+
+  <main class="page-shell">
+    <section class="page-intro shell narrow" aria-labelledby="register-title">
+      <p class="hero-kicker">Registration checkpoint</p>
+      <h1 id="register-title">Register to start Module 1.</h1>
+      <p class="hero-copy">
+        The public site previews the learning path. Registration is the gateway to the first GitHub Classroom assignment.
       </p>
+    </section>
 
-      <section class="content-card callout">
-        <h2>Microsoft Forms link to be added</h2>
+    <section class="shell register-layout" aria-label="Registration steps">
+      <div class="checkpoint-panel">
+        <p class="section-label">Microsoft Forms</p>
+        <h2>Form link coming soon.</h2>
         <p>
-          Replace this section with your Microsoft Forms registration URL so learners complete signup before receiving the GitHub Classroom links.
+          Once the Microsoft Form is connected, this button will open the signup form. The form confirmation message should provide the Module 1 GitHub Classroom link.
         </p>
+        <a class="button primary is-disabled" href="#" aria-disabled="true">Microsoft Forms link coming soon</a>
         <p class="microcopy">
-          A local Microsoft Forms import template has been created in the private build repo so you can generate the form faster.
+          The form should collect contact details, learning goals, GitHub readiness, and consent for course-related follow-up.
         </p>
-      </section>
+      </div>
 
-      <section class="content-card">
-        <h2>Internal setup and testing links</h2>
-        <p>Until the Microsoft Form is connected, these links can be used for internal review and setup testing.</p>
-        <ul class="link-list">
-          <li><a href="https://classroom.github.com/a/ANhxwV-h">SAX101-01 Working With Your First Sports Dataset</a></li>
-          <li><a href="https://classroom.github.com/a/6Ja4krmw">SAX101-02 Summarising and Visualising Sports Data</a></li>
-        </ul>
-      </section>
-    </div>
+      <ol class="flow-list">
+        <li>
+          <span class="step-number">1</span>
+          <div>
+            <h3>Complete the form</h3>
+            <p>Tell us who you are, what kind of sport context you care about, and whether you already have a GitHub account.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number">2</span>
+          <div>
+            <h3>Open the confirmation link</h3>
+            <p>The confirmation message should send you to SAX101-01, where GitHub Classroom creates your private activity repo.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number">3</span>
+          <div>
+            <h3>Follow the first module</h3>
+            <p>Work through the lesson, complete the starter code, run the tests, and finish the short reflection.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
   </main>
 </body>
 </html>

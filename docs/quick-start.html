@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quick Start | La Trobe Uni Sport Analytics</title>
-  <meta name="description" content="Quick start guide for La Trobe Uni Sport Analytics GitHub Classroom modules.">
+  <meta name="description" content="A compact checklist for starting La Trobe Uni Sport Analytics GitHub Classroom modules.">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body data-page="quick-start">
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand-lockup" href="./index.html">
+    <div class="shell header-inner">
+      <a class="brand-lockup" href="./index.html" aria-label="La Trobe Uni Sport Analytics home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">
           <strong>La Trobe Uni</strong>
@@ -18,71 +18,57 @@
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="./index.html">Home</a>
-        <a href="./quick-start.html">Quick start</a>
-        <a href="./register.html">Register</a>
+        <a href="./index.html#path">Learning path</a>
+        <a href="./quick-start.html" aria-current="page">Quick start</a>
+        <a class="nav-cta" href="./register.html">Register</a>
       </nav>
     </div>
   </header>
-  <main class="page">
-    <div class="wrap narrow">
-      <div class="page-hero">
-        <p class="hero-kicker">La Trobe Uni Sport Analytics</p>
-        <h1 class="page-title">
-          <span>Quick</span>
-          <span>start.</span>
-        </h1>
-      </div>
-      <p class="lead">
-        Use this page before starting module 1 if GitHub Classroom or Python feels new.
+
+  <main class="page-shell">
+    <section class="page-intro shell narrow" aria-labelledby="quick-title">
+      <p class="hero-kicker">Before Module 1</p>
+      <h1 id="quick-title">Quick start checklist.</h1>
+      <p class="hero-copy">
+        Use this when GitHub Classroom, VS Code, or Python feels new. Each step moves you closer to a working module repo.
       </p>
+    </section>
 
-      <section class="content-card">
-        <h2>1. Sign in to GitHub</h2>
-        <p>Create a GitHub account if you do not have one already, or sign in with your existing account.</p>
-        <p class="placeholder">Screenshot placeholder: GitHub sign-in or create-account screen.</p>
-      </section>
+    <section class="shell checklist-grid" aria-label="Quick start checklist">
+      <article class="check-card">
+        <span class="step-number">1</span>
+        <h2>GitHub account</h2>
+        <p>Create a free GitHub account or sign in with your existing account.</p>
+      </article>
+      <article class="check-card">
+        <span class="step-number">2</span>
+        <h2>Accept assignment</h2>
+        <p>Use the Module 1 link from the registration confirmation to create your private repository.</p>
+      </article>
+      <article class="check-card">
+        <span class="step-number">3</span>
+        <h2>Open repo</h2>
+        <p>Work in GitHub Codespaces if available, or clone the repository and open it in VS Code.</p>
+      </article>
+      <article class="check-card">
+        <span class="step-number">4</span>
+        <h2>Read lesson</h2>
+        <p>Start with <code>lesson.md</code>, then use <code>assignment.md</code> as the task brief.</p>
+      </article>
+      <article class="check-card">
+        <span class="step-number">5</span>
+        <h2>Run tests</h2>
+        <p>Use <code>pytest -q</code> to check your work as you complete <code>student/analysis.py</code>.</p>
+      </article>
+      <article class="check-card">
+        <span class="step-number">6</span>
+        <h2>Reflect</h2>
+        <p>Complete <code>reflection.md</code> to explain what the output means in plain sport analytics language.</p>
+      </article>
+    </section>
 
-      <section class="content-card">
-        <h2>2. Accept the assignment link</h2>
-        <p>After registration, you will receive the GitHub Classroom link for the module. Accept the assignment to create your own private repository.</p>
-        <p class="placeholder">Screenshot placeholder: GitHub Classroom assignment acceptance screen.</p>
-      </section>
-
-      <section class="content-card">
-        <h2>3. Open the repository</h2>
-        <p>You can work in GitHub Codespaces if it is available, or clone the repository and work locally.</p>
-        <p class="placeholder">Screenshot placeholder: repository page with Code and VS Code/Codespaces entry points.</p>
-      </section>
-
-      <section class="content-card">
-        <h2>4. Follow the learning path inside the repo</h2>
-        <ol>
-          <li>Open <code>quick-start.md</code> if the repo includes it.</li>
-          <li>Read <code>lesson.md</code>.</li>
-          <li>Read <code>assignment.md</code>.</li>
-          <li>Edit <code>student/analysis.py</code>.</li>
-          <li>Complete <code>reflection.md</code> after your tests pass.</li>
-        </ol>
-      </section>
-
-      <section class="content-card">
-        <h2>5. Run the tests</h2>
-        <p>Use the terminal in Codespaces or your local environment and run:</p>
-        <pre><code>pytest -q</code></pre>
-        <p>The tests help you check whether your functions produce the expected outputs.</p>
-        <p class="placeholder">Screenshot placeholder: terminal with a passing pytest run.</p>
-      </section>
-
-      <section class="content-card">
-        <h2>6. If you get stuck</h2>
-        <ul>
-          <li>Read the test failure message carefully.</li>
-          <li>Check that column names and file names match exactly.</li>
-          <li>Go back to the lesson and assignment steps one function at a time.</li>
-          <li>Use the official references linked in the lesson sidebars if you want a deeper explanation.</li>
-        </ul>
-      </section>
+    <div class="shell continue-dock page-dock">
+      <a class="button dock-button" href="./register.html">Register to start Module 1</a>
     </div>
   </main>
 </body>

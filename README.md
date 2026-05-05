@@ -14,6 +14,6 @@ The public site should present:
 - a gated preview of the two `SAX101` modules,
 - a pathway link to the **Master of Sport Analytics**.
 
-The site is intentionally static for GitHub Pages. `docs/assets/` contains original visual assets for the hero and module cards.
+The site is intentionally static for GitHub Pages. `docs/assets/` contains original visual assets for the SVG hero strip and module cards.
 
 The header uses a white-background version derived from the official La Trobe University logo asset sourced from `https://www.latrobe.edu.au/_media/la-trobe-api/v5/img/logo-white.svg`.

@@ -6,13 +6,12 @@
   <title>La Trobe Uni Sport Analytics</title>
   <meta name="description" content="A guided, beginner-friendly public resource for learning sport analytics with Python through La Trobe Uni Sport Analytics.">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./app.js" defer></script>
 </head>
 <body data-page="home">
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand-lockup" href="./index.html" aria-label="La Trobe Uni Sport Analytics home">
-        <span class="logo-panel"><img src="./assets/la-trobe-logo-white.svg" alt="La Trobe University"></span>
+        <span class="logo-panel"><img src="./assets/la-trobe-logo-black.svg" alt="La Trobe University"></span>
         <span class="program-label">Sport Analytics</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -35,20 +34,8 @@
           A guided public resource for learning Python, data concepts, and sport analytics through small practical wins.
         </p>
 
-        <div class="intent-panel" aria-label="Choose your learning goal">
-          <p class="panel-label">Tell us where you are starting</p>
-          <div class="intent-options" role="group" aria-label="Learner intent">
-            <button class="intent-button is-active" type="button" data-intent="coding" aria-pressed="true">I am new to coding</button>
-            <button class="intent-button" type="button" data-intent="sport" aria-pressed="false">I work in sport</button>
-            <button class="intent-button" type="button" data-intent="study" aria-pressed="false">I am exploring study</button>
-          </div>
-          <noscript>
-            <p class="microcopy">Start with SAX101-01, then continue to SAX101-02. Registration opens the first module.</p>
-          </noscript>
-        </div>
-
         <div class="hero-actions">
-          <a class="button primary" href="#path">See my path</a>
+          <a class="button primary" href="#path">See the learning path</a>
           <a class="button secondary" href="./register.html">Register to start Module 1</a>
         </div>
       </div>
@@ -64,13 +51,39 @@
 
     <section class="recommendation-section" aria-labelledby="recommendation-title">
       <div class="shell recommendation-layout">
-        <div class="mascot-chip" aria-hidden="true">1</div>
+        <div class="step-chip" aria-hidden="true">1</div>
         <div>
           <p class="section-label">Recommended start</p>
-          <h2 id="recommendation-title" data-recommendation-title>Start with SAX101-01.</h2>
-          <p data-recommendation-copy>
+          <h2 id="recommendation-title">Start with SAX101-01.</h2>
+          <p>
             You will begin with rows, columns, files, and a small sports dataset before writing your first Python functions.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="story-title">
+      <div class="shell story-layout">
+        <div class="section-heading">
+          <p class="section-label">How signup works</p>
+          <h2 id="story-title">A short path from interest to first analysis.</h2>
+        </div>
+        <div class="story-steps">
+          <article>
+            <span>01</span>
+            <h3>Register once</h3>
+            <p>Use the Microsoft Form to share your contact details, learning goal, GitHub readiness, and consent.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Get Module 1</h3>
+            <p>The form confirmation points you to SAX101-01, where GitHub Classroom creates your private activity repo.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Learn by doing</h3>
+            <p>Read the lesson, edit the starter code, run the tests, and write a short interpretation of your output.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -85,7 +98,7 @@
         <div class="path-grid" aria-label="La Trobe Uni Sport Analytics learning path">
           <article class="path-card is-selected" data-path-card>
             <span class="pick-badge">Start here</span>
-            <div class="path-card-media blue-band"><img src="./assets/icon-dataset.png" alt="" aria-hidden="true"></div>
+            <div class="path-card-media"><img src="./assets/icon-dataset.png" alt="" aria-hidden="true"></div>
             <div class="path-card-body">
               <p class="path-meta">Module 1</p>
               <h3>SAX101-01</h3>
@@ -95,7 +108,7 @@
 
           <article class="path-card">
             <span class="pick-badge muted">Next</span>
-            <div class="path-card-media orange-band"><img src="./assets/icon-visualisation.png" alt="" aria-hidden="true"></div>
+            <div class="path-card-media"><img src="./assets/icon-visualisation.png" alt="" aria-hidden="true"></div>
             <div class="path-card-body">
               <p class="path-meta">Module 2</p>
               <h3>SAX101-02</h3>
@@ -105,7 +118,7 @@
 
           <article class="path-card">
             <span class="pick-badge muted">Coming soon</span>
-            <div class="path-card-media yellow-band"><img src="./assets/icon-case-study.png" alt="" aria-hidden="true"></div>
+            <div class="path-card-media"><img src="./assets/icon-case-study.png" alt="" aria-hidden="true"></div>
             <div class="path-card-body">
               <p class="path-meta">SAX201</p>
               <h3>Paper Case Studies</h3>
@@ -115,7 +128,7 @@
 
           <article class="path-card pathway-card">
             <span class="pick-badge muted">Go deeper</span>
-            <div class="path-card-media green-band"><img src="./assets/icon-pathway.png" alt="" aria-hidden="true"></div>
+            <div class="path-card-media"><img src="./assets/icon-pathway.png" alt="" aria-hidden="true"></div>
             <div class="path-card-body">
               <p class="path-meta">Study pathway</p>
               <h3>Master of Sport Analytics</h3>

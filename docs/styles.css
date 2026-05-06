@@ -263,7 +263,7 @@ h3 {
 
 .topic-rail {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .topic-rail span {
@@ -286,7 +286,8 @@ h3 {
 
 .rail-blue,
 .rail-green,
-.rail-yellow {
+.rail-yellow,
+.rail-dark {
   background: var(--ink);
   opacity: 0.18;
 }
@@ -338,6 +339,13 @@ h3 {
   text-align: center;
 }
 
+.section-intro {
+  max-width: 780px;
+  margin: 0 auto 24px;
+  color: var(--graphite);
+  font-size: 16px;
+}
+
 .story-steps {
   display: grid;
   gap: 18px;
@@ -368,9 +376,9 @@ h3 {
 .path-grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
-  width: min(920px, 100%);
+  width: min(1040px, 100%);
   margin: 0 auto;
 }
 
@@ -405,7 +413,7 @@ h3 {
 }
 
 .path-card-body {
-  padding: 24px 24px 26px;
+  padding: 24px 22px 26px;
 }
 
 .pick-badge {
@@ -582,8 +590,11 @@ code {
   }
 
   .story-steps,
-  .path-grid,
   .checklist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .path-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
